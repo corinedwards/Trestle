@@ -1,65 +1,59 @@
-@charset "utf-8";
-/* CSS Document */
-
-/*----------------------*/
-
-
-#content .responsive-table td {
+responsive-table td {
 	border:solid 1px #ccc;
 }
 	@media (min-width: 601px) {
-		#content .responsive-table td:before {
+		.responsive-table td:before {
 			display: none;
 			visibility:hidden;
 		}
 }
 	@media (max-width: 600PX) {
 		/* Force table to not be like tables anymore */
-		#content .responsive-table table, #content .responsive-table thead, #content .responsive-table tbody, #content .responsive-table th, #content .responsive-table td, #content .responsive-table tr {
+		.responsive-table table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr {
 			display: block;
 		}
-		#content .article .box-sizing .border .responsive-table th {
+		.responsive-table th {
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
-		#content .article .box-sizing .border table.responsive-table td {
+		table.responsive-table td {
 			/* Behave  like a "row" */
 			position: relative;
 			padding-left: 22VW;
 			padding-right: 5vw;
 			padding-top: 1vw;
 		}
-		#content .article .box-sizing .border .responsive-table td:before {
+		.responsive-table td:before {
 			/* Now like a table header */
 			position: absolute;
 			left: 1vw;
 			width: 20vw;
 			top:0.5em;
-      /*For looooooooong names*/
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
+			/*For looooooooong names*/
+			-webkit-hyphens: auto;
+			 -moz-hyphens: auto;
+			  -ms-hyphens: auto;
+			      hyphens: auto;
 
 		}
-		#content .responsive-table td{
+		.responsive-table td{
 			border-bottom:none;
 		}
-		#content .responsive-table tr {
+		.responsive-table tr {
 			/*provide some visual distinction between rows*/
 			 border-top:solid 2px #000;
 		}
-		#content .responsive-table tr:last-child {
+		.responsive-table tr:last-child {
 		   border-bottom:solid 1px #ccc;
 		}		
-		#content .responsive-table thead tr, #content .responsive-table thead tr:last-child{
+		.responsive-table thead tr, .responsive-table thead tr:last-child{
 			border:none;
 		}
-		#content .responsive-table td:first-child{
+		.responsive-table td:first-child{
 			border-top:none
 		}
-		#content .responsive-table td ul{
+		.responsive-table td ul{
 			margin-top:0.5vw;
 		}
 
